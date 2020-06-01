@@ -24,5 +24,15 @@ namespace wpfMinta
         {
             InitializeComponent();
         }
+
+        private void Randomgenerator_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

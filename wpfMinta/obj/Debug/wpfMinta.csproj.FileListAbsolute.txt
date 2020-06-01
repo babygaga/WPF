@@ -1,0 +1,15 @@
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.csprojAssemblyReference.cache
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\MainWindow.g.cs
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\App.g.cs
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta_MarkupCompile.cache
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta_MarkupCompile.lref
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\bin\Debug\wpfMinta.exe.config
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\bin\Debug\wpfMinta.exe
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\bin\Debug\wpfMinta.pdb
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\MainWindow.baml
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.g.resources
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.Properties.Resources.resources
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.csproj.GenerateResource.cache
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.csproj.CoreCompileInputs.cache
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.exe
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.pdb
