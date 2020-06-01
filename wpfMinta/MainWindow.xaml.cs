@@ -24,15 +24,42 @@ namespace wpfMinta
         {
             InitializeComponent();
         }
+        private int CountOfDevisers(int number)
+        {
+            int DevisorCount = 1;
+            for (int i = 2; i < number; i++)
+            {
+                if (number % i == 0)
+                {
+                    DevisorCount++;
+                }
+            }
+            return DevisorCount;
+        }
 
         private void Randomgenerator_Click(object sender, RoutedEventArgs e)
         {
-
+            Random random = new Random();
+            int number = random.Next(1, 1000000000);
+            NumberTextbox.Text = number.ToString();
         }
 
         private void CheckButton_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                int number = int.Parse(NumberTextbox.Text);
+                int divisors = CountOfDevisers(number);
+                MessageBox.Show(string.Format($"{number}has {divisors} devisors"));
+            }
+            catch (FormatException formatexception)
+            {
+                MessageBox.Show(formatexception.Message, "A szám nem megfelelő formátumú!");
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Nem várt hiba történt!");
+            }
         }
     }
 }
