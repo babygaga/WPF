@@ -13,3 +13,7 @@ C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.csproj.GenerateReso
 C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.csproj.CoreCompileInputs.cache
 C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.exe
 C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.pdb
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\bin\Debug\wpfMinta.exe.manifest
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\bin\Debug\wpfMinta.application
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.exe.manifest
+C:\Users\dezmo\source\repos\WPF2\wpfMinta\obj\Debug\wpfMinta.application
