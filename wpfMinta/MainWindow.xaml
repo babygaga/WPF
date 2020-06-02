@@ -10,6 +10,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <TextBox Grid.Row="0" x:Name="NumberTextbox"/>
@@ -21,5 +25,51 @@
             <Button Grid.Column="0" x:Name="Randomgenerator" Content="New Number" Click="Randomgenerator_Click"/>
             <Button Grid.Column="1" x:Name="CheckButton" Content="Check Number" Click="CheckButton_Click"/>
         </Grid>
+        <TextBlock Grid.Row="2"
+                   Text="simple text"
+                   FontSize="10"
+                   FontStyle="Italic"
+                   FontWeight="Black"/>
+
+        <StackPanel Grid.Row="3">
+            <RadioButton x:Name="FirtsRadioButton"
+                         GroupName="x"
+                         Unchecked="FirtsRadioButton_Unchecked"
+                         Checked="FirtsRadioButton_Unchecked"
+                         IsChecked="True"/>
+            <RadioButton x:Name="SecondRadioButton"
+                         GroupName="x"
+                         Unchecked="FirtsRadioButton_Unchecked"
+                         Checked="FirtsRadioButton_Unchecked"
+                         IsChecked="False"/>
+            <RadioButton x:Name="ThirdRadioButton"
+                         GroupName="x"
+                         Unchecked="FirtsRadioButton_Unchecked"
+                         Checked="FirtsRadioButton_Unchecked"
+                         IsChecked="False"/>
+            <RadioButton x:Name="FourthRadioButton"
+                         GroupName="x"
+                         Unchecked="FirtsRadioButton_Unchecked"
+                         Checked="FirtsRadioButton_Unchecked"
+                         IsChecked="False"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4">
+            <CheckBox x:Name="one"
+                      IsChecked="False"
+                      Checked="On_Checked"
+                      Unchecked="On_Checked"/>
+            <CheckBox x:Name="Two"
+                      IsChecked="False"
+                      Checked="On_Checked"
+                      Unchecked="On_Checked"/>
+            <CheckBox x:Name="Three"
+                      IsChecked="False"
+                      Checked="On_Checked"
+                      Unchecked="On_Checked"/>
+
+        </StackPanel>
+        <TextBox Grid.Row="5" x:Name="textinput"
+                     Text="placeholder"
+                     TextChanged="textinput_TextChanged"/>
     </Grid>
 </Window>

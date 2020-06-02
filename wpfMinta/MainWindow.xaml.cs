@@ -44,14 +44,17 @@ namespace wpfMinta
             NumberTextbox.Text = number.ToString();
         }
 
-        private void CheckButton_Click(object sender, RoutedEventArgs e)
+        private async void CheckButton_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 int number = int.Parse(NumberTextbox.Text);
+                await Task.Run(() =>
+                { 
                 int divisors = CountOfDevisers(number);
                 MessageBox.Show(string.Format($"{number}has {divisors} devisors"));
-            }
+            });
+        }
             catch (FormatException formatexception)
             {
                 MessageBox.Show(formatexception.Message, "A szám nem megfelelő formátumú!");
@@ -60,6 +63,22 @@ namespace wpfMinta
             {
                 MessageBox.Show(exception.Message, "Nem várt hiba történt!");
             }
+        }
+
+        private void FirtsRadioButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            var radioButton = (sender as RadioButton);
+            System.Diagnostics.Debug.WriteLine($"{radioButton.Name} is checked: {radioButton.IsChecked}");
+        }
+
+        private void On_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textinput_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine(textinput.Text);
         }
     }
 }
