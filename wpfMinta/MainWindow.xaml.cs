@@ -24,17 +24,21 @@ namespace wpfMinta
         {
             InitializeComponent();
         }
-        private int CountOfDevisers(int number)
+        private async Task<int> CountOfDevisersAsync(int number)
         {
-            int DevisorCount = 1;
-            for (int i = 2; i < number; i++)
-            {
-                if (number % i == 0)
-                {
-                    DevisorCount++;
-                }
-            }
-            return DevisorCount;
+            int devisors = await Task<int>.Run(() =>
+           {
+               int DevisorCount = 1;
+               for (int i = 2; i < number; i++)
+               {
+                   if (number % i == 0)
+                   {
+                       DevisorCount++;
+                   }
+               }
+               return DevisorCount;
+           });
+            return devisors;
         }
 
         private void Randomgenerator_Click(object sender, RoutedEventArgs e)
@@ -44,17 +48,22 @@ namespace wpfMinta
             NumberTextbox.Text = number.ToString();
         }
 
+        private async Task ShowCalculationResultAsync(int number)
+        {
+            await Task.Run(async() =>
+            {
+                int divisors = await CountOfDevisersAsync( number);
+                MessageBox.Show(string.Format($"{number}has {divisors} devisors"));
+            });
+        }
+
         private async void CheckButton_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 int number = int.Parse(NumberTextbox.Text);
-                await Task.Run(() =>
-                { 
-                int divisors = CountOfDevisers(number);
-                MessageBox.Show(string.Format($"{number}has {divisors} devisors"));
-            });
-        }
+                await ShowCalculationResultAsync(number);
+            }
             catch (FormatException formatexception)
             {
                 MessageBox.Show(formatexception.Message, "A szám nem megfelelő formátumú!");
